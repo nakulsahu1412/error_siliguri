@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.royal-heading {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(135deg, #D4AF37 0%, #F9E27E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F9E27E 100%);
+}
+
+.gold-border {
+  border: 2px solid #D4AF37;
+}
+
+.gold-glow {
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.6);
+  transform: translateY(-2px);
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: revealUp 0.8s ease forwards;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.btn-gold-fill {
+  background: linear-gradient(135deg, #D4AF37 0%, #F9E27E 100%);
+  color: #000000;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.5);
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-gold-fill:hover {
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.7);
+  transform: translateY(-3px);
+}
+
+.btn-gold-outline {
+  background: transparent;
+  color: #D4AF37;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 8px;
+  border: 2px solid #D4AF37;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-gold-outline:hover {
+  background: rgba(212, 175, 55, 0.1);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  transform: translateY(-3px);
+}
+
+.menu-card {
+  background: #0a0a0a;
+  border: 1px solid #D4AF37;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
+  transform: translateY(-5px);
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid #D4AF37;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
+}
+
+.nav-link {
+  color: #D4AF37;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #F9E27E;
+}
+
+.input-field {
+  background: #0a0a0a;
+  border: 2px solid #D4AF37;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #F9E27E;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background: #0a0a0a;
+  border: 2px solid #D4AF37;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.6);
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.instagram-icon {
+  color: #D4AF37;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.instagram-icon:hover {
+  color: #F9E27E;
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .btn-gold-fill, .btn-gold-outline {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .modal-content {
+    padding: 30px 20px;
+  }
+}
