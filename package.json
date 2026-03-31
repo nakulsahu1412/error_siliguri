@@ -1,24 +1,19 @@
 {
-  "name": "error-siliguri-web",
-  "version": "1.0.0",
+  "name": "error-siliguri",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-scripts": "5.0.1",
-    "lucide-react": "^0.263.1",
-    "framer-motion": "^10.12.16"
+    "framer-motion": "10.12.16",
+    "lucide-react": "0.263.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
   },
   "browserslist": {
     "production": [
